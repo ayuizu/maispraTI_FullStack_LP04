@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+.red-hat-display-rhRegular {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100,200;
+    font-style: normal;
+  }
+
+
+.overpass-font2 {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --primary-color:#F20519;
+    --secondary-color: #BF0426; 
+    --tertiary-color: #d1d1d1;
+    --quartiary-color:#BF7E6F; 
+    --quinary-color:#8C0303; 
+    /* Color Theme Swatches from Adobe Colors*/
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+/** ----------NAV---------- */
+
+nav{
+    background-color: #fff;
+    border: solid 1px var(--quartiary-color);
+    position: fixed;
+    z-index: 3;
+    height: 110px;
+    width:100%;
+}
+.logo{
+    margin: 0.5% 0.5%;
+    float: left;
+    top: 1%;
+    width: 200px;
+
+}
+
+.mainMenu{
+    margin-top: 2%;
+    margin-right: 1%;
+    float:right;
+    width: 750px;
+}
+nav ul li{
+    list-style-type: none;
+    float:left;
+    padding: 0 10px ;
+    display: block;
+
+}
+
+.this-page{
+    background-color: var(--quartiary-color);
+    padding: 3px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--quinary-color);
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    color:var(--primary-color);
+    text-decoration:underline;
+}
+
+/** ----------MAIN---------- */
+main{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* BANNER */
+
+#banner {
+    background-image: url(../images/banner2.JPEG);
+    background-color: var(--quartiary-color);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    top: 110px;
+    left: 0%;
+    width: 100%;
+    height: 700px;
+    object-fit:cover;
+    opacity: 90%;
+}
+
+/* .hero-img{
+    position: fixed;
+    top: 0px;
+    width:100%;
+    height: 700px;
+    object-fit: cover;
+    z-index:1;
+} */
+
+/*CONTENT*/
+
+#content{
+    position: absolute;
+    top: 810px; 
+    left: 50%; 
+    transform: translateX(-75%);
+    width: 800px;
+   
+}
+
+table{
+    position: relative;
+    width: 70%;
+    /* border: solid black 2px; */
+    display: block;
+}
+
+table tr td{
+    width: 35%;
+    height: 100px;
+    /* border: solid black   2px; */
+    padding-bottom: 100px;
+}
+
+table h2{
+    letter-spacing: 4px;
+    font-size: 2rem;
+}
+
+table p{
+    line-height: 2;
+}
+
+.cnt-description{
+    text-align: center;
+}
+
+.cnt-img-left img, .cnt-img-right img{
+    width:600px;  
+    height: 375px; 
+    z-index:1;
+
+}
+
+.cnt-img-left img{
+    margin-left: 10%;
+
+}
+
+.cnt-img-right img{
+    margin-left: -20%;
+}
+.cnt-box-left, .cnt-box-right {
+    background-color:var(--tertiary-color);
+    width: 500px;
+    height: 150px;
+    position: relative;
+    opacity: 95%;
+    z-index:2;
+    padding: 10px;
+}
+.cnt-box-left h3, .cnt-box-right h3{
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size:1.5rem;
+}
+
+.cnt-box-right {
+    left: -10%;
+}
+
+.cnt-box-left {
+    margin-left: 15%;
+}
+
+#content a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+#content a:hover{
+    color: var(--quinary-color);
+}
+
+
+/** ----------FOOTER---------- */
+
+
+.footer-home{
+    position:absolute;
+    left: 0px;
+    top:410%;
+    z-index:3;
+
+    width: 100%;
+    height:15px;
+
+    border: solid 1px var(--quartiary-color);
+    background-color:#BFBCBA;
+    text-align: center;
+    color:var(--quinary-color);
+
+    padding:20px 0 ;
+}
+
+
+/** ----------OUTRAS PÁGINAS---------- */
+
+
+#banner-sec {
+    background-image: url(../images/banner-sec.JPEG);
+    background-color: var(--quartiary-color);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+    padding:0px;
+    margin: 0px;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 90%;
+}
+#content-sec{
+    position: absolute;
+    top: 450px; 
+    left: 50%; 
+    transform: translateX(-75%);
+    width: 800px;
+   
+}
+
+#content-sec table{
+    text-align: center;
+    width: 70%;
+}
+#content-sec table tr td{
+    text-align: center;
+    width: 35%;
+}
+
+/* .img-sec {
+    width: 500px;
+    height: 100px;
+    object-fit: cover;
+} */
+
+.footer-sec{
+
+    position:absolute;
+    left: 0px;
+    top: 150%;
+    z-index:3;
+
+    width: 100%;
+    height:15px;
+
+    border: solid 1px var(--quartiary-color);
+    background-color:#BFBCBA;
+    text-align: center;
+    color:var(--quinary-color);
+
+    padding:20px 0 ;
+}
+/* MENU */
+
+.img-menu{
+    width:400px;
+    height: 300px;
+    object-fit: cover;
+}
+/* RESERVAS */
+
+#register table{
+
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px var(--quinary-color) solid;
+    padding: 10px;
+    width: 600px;
+}
+#register table tr td{
+    text-align: right;
+    /* border: 1px black solid; */
+    padding: 2px;
+    width: 100px;
+    height: 50px;
+}
+
+form select {
+    width: 98%;
+    border: 1px var(--secondary-color) solid;
+}
+form input{
+    width: 98%;
+    border: 1px var(--secondary-color) solid;
+}
+
+#register button{
+    color:#fff;
+    background-color:var(--quartiary-color);
+    padding: 3px;
+    border: 1px var(--secondary-color) solid;
+    
+}
+
+/* SOBRE - ORIGENS */
+
+.origin-description p span{
+    font-style: italic;
+}
+
+.origin-img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* CONTATO */
+
+.contact-td{
+    height: 0px;
+}
+.contact-txt{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contact-link{
+    text-align: left;
+    padding-left: 10px;
+}
+.contact-link a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.contact-link a:hover{
+    color: var(--quinary-color);
+}
+.fa-icon{
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}

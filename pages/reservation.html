@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kobe Cozinha Japonesa</title>
+    <link rel="stylesheet" href="../assets/css/index.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+
+                <img class="logo" src="../assets/images/kobe_logo.png" alt="Kobe Cozinha Japonesa" >
+
+            </div>
+            <div class="mainMenu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre o Restaurante</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Cardápio</a></li>
+                    <li class="this-page"class="nav-item"><a href="reservation.html" class="nav-link">Reservas</a></li>
+                    <li  class="nav-item"><a href="location.html" class="nav-link">Localização</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="banner-sec">
+
+        </section>
+
+        <section id="content-sec">
+            <table>
+                <tr class="cnt-description">
+                    <td colspan="2">
+                        <br>
+                        <h2>RESERVAS</h2>
+                        <br>
+                        <p>Te convidamos a saborear a autêntica culinária oriental em Porto Alegre.
+                            <br>
+                            Com um menu clássico e variado, resgatamos as principais características da tradicional gastronomia do Japão.</p>
+                    </td>
+                </tr>
+                <tr id="register">
+                    <td colspan="2">
+                        <form>
+                            <table>
+                                <tr>
+                                    <td>Seu nome: </td>
+                                    <td colspan="3"><input type="text" id="name" /></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>E-mail: </td>
+                                    <td colspan="3"><input type="text" id="email" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Telefone: </td>
+                                    <td colspan="3"><input type="text" id="tel" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Ano:</td>
+                                    <td>
+                                        <select id="year">
+                                            <option value="2024">2024</option>
+                                        </select>
+                                    </td>
+                        
+                                    <td>Mês:</td>
+                                    <td>
+                                        <select id="month">
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </td>
+                        
+                                    <td>Dia:</td>
+                                    <td>
+                                        <select id="day">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </td>
+            
+                                </tr>
+                                <tr>
+                                    <td>Horário</td>
+                                    <td>
+                                    <select id="horario">
+                                        <option value="1">19h00</option>
+                                        <option value="2">19h30</option>
+                                        <option value="3">20h00</option>
+                                        <option value="4">20h30</option>
+                                        <option value="5">21h00</option>
+                                        <option value="6">21h30</option>
+                                        <option value="7">22h00</option>
+                                        <option value="8">22h30</option>
+                                    </select>
+                                    </td>
+                                    <td>Nº de pessoas</td>
+                                    <td>
+                                        <select id="qtd-pessoas">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        </select>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <button class="sendButton" onclick="confirmarReserva()">Enviar</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img class="img-sec" src="../assets/images/sushi-5062712_1280.jpg" alt="">
+                    </td>
+                </tr>
+               
+            </table>  
+
+        </section>
+
+
+    </main>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
