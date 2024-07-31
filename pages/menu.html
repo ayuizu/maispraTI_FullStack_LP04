@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kobe Cozinha Japonesa</title>
+    <script src="../assets/js/script.js"></script>
     <link rel="stylesheet" href="../assets/css/index.css" />
 </head>
 <body>
@@ -28,112 +29,41 @@
         </nav>
     </header>
     <main>
-        <section id="banner-sec">
+        <div id="banner-sec">
 
-        </section>
+        </div>
 
-        <section id="content-sec">
-            <table>
-                <tr class="cnt-description">
-                    <td colspan="2">
-                        <br>
-                        <h2>MENU</h2>
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="img-menu" src="../assets/images/menu-sushi.png" alt="Fotografia de um prato do restaurante"></td>
-                    <td>
-                        <h3>
-                            Sushi
-                        </h3>
-                        <p>Combinado 1 --------- R$ 100,00</p>
-                        <p>Combinado 2 --------- R$ 120,00</p>
-                        <p>Combinado 3 --------- R$ 140,00</p>
-                        <p>Combinado 4 --------- R$ 160,00</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="img-menu" src="../assets/images/menu-yakisoba.png" alt="Fotografia de um prato de yakisoba"></td>
-                    <td>
-                        <h3>
-                            Yakisoba
-                        </h3>
-                        <p>Opção 1 --------- R$ 100,00</p>
-                        <p>Opção 2 --------- R$ 120,00</p>
-                        <p>Opção 3 --------- R$ 140,00</p>
-                        <p>Opção 4 --------- R$ 160,00</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="img-menu" src="../assets/images/menu-yakimeshi.png" alt="Fotografia de um prato de yakimeshi"></td>
-                    <td>
-                        <h3>
-                            Yakimeshi
-                        </h3>
-                        <p>Opção 1 --------- R$ 100,00</p>
-                        <p>Opção 2 --------- R$ 120,00</p>
-                        <p>Opção 3 --------- R$ 140,00</p>
-                        <p>Opção 4 --------- R$ 160,00</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="img-menu" src="../assets/images/menu-chirashi.jpeg" alt="Fotografia de um prato de chirashi"></td>
-                    <td>
-                        <h3>
-                            Chirashizushi
-                        </h3>
-                        <p>Opção 1 --------- R$ 100,00</p>
-                        <p>Opção 2 --------- R$ 120,00</p>
-                        <p>Opção 3 --------- R$ 140,00</p>
-                        <p>Opção 4 --------- R$ 160,00</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="img-menu" src="../assets/images/pexels-marvin-sacdalan-276316567-13065230.jpg" alt="Fotografia de um bentô"></td>
-                    <td>
-                        <h3>
-                            Bentô
-                        </h3>
-                        <p>Combinado 1 --------- R$ 100,00</p>
-                        <p>Combinado 2 --------- R$ 120,00</p>
-                        <p>Combinado 3 --------- R$ 140,00</p>
-                        <p>Combinado 4 --------- R$ 160,00</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="img-menu" src="../assets/images/pexels-xmtnguyen-2664216.jpg" alt="Fotografia de um prato de Ramen"></td>
-                    <td>
-                        <h3>
-                            Ramen
-                        </h3>
-                        <p>Opção 1 --------- R$ 100,00</p>
-                        <p>Opção 2 --------- R$ 120,00</p>
-                        <p>Opção 3 --------- R$ 140,00</p>
-                        <p>Opção 4 --------- R$ 160,00</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="img-menu" src="../assets/images/daniel-tellez-giron-ZOINPNtpvGI-unsplash.jpg" alt="Fotografia de um prato de onigiri"></td>
-                    <td>
-                        <h3>
-                            Onigiri
-                        </h3>
-                        <p>Opção 1 --------- R$ 100,00</p>
-                        <p>Opção 2 --------- R$ 120,00</p>
+        <div class="container menu-content" id="content-sec">
 
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <img src="../assets/images/sushi-2853382_1280.jpg" alt="Prato de sushi">
-                    </td>
-                </tr>
+                <div class="mb-4 col-md-8">
+                    <div class="mb-0 center">
+                        <h3 class="fs-1 text-center">Menu</h3>
+                    </div>
+                </div>
+           
 
-                
-            </table>  
+                <div class="row col-md-6 mb-2">
+                    <p class="text-center">Clique abaixo e descubra!</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" onclick="requisitar('menuQuentes.html')" class="btn btn-secondary aba">Pratos Quentes</a>
+                        <a href="#" onclick="requisitar('menuFrios.html')" class="btn btn-secondary aba">Pratos Frios</a>
+                        <a href="#" onclick="requisitar('menuBebidas.html')" class="btn btn-secondary aba">Bebidas</a>
+                    </div>
+                </div>
 
-        </section>
+                <div class="row">
+                    <div class="col-md-12"></div>
+                        <div class="col-md-10 justify-center" id="content">
+        
+                        </div>
+                </div>
+        
+                <div class="col-md-8">
+                    <img src="../assets/images/sushi-2853382_1280.jpg" alt="Prato de sushi">
+                </div>
+          
+
+        </div>
 
 
     </main>
