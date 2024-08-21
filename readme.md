@@ -1,13 +1,19 @@
 # Lading Page
 
-Esta é a terceira atividade do curso Dev Full Stack, oferecido pela +praTI e CodificaEdu. Consiste em criar uma lading page.
+Esta é a quarta atividade do curso Dev Full Stack, oferecido pela +praTI e CodificaEdu. Consiste em aprimorar a landing page da atividade 03.
 
+Atualizações
+- Criação da branch developer;
+- Utilização de grid e flexbox;
+- Página CARDÁPIO com requisições assincronas (ajax);
+- Página RESERVAS com operações crud com o LocalStorage;
+- Responsividade.
 
 ## Links
 
-Link para repositório no GitHub: https://github.com/ayuizu/maispraTI_FullStack_LP03.git
+Link para repositório no GitHub: https://github.com/ayuizu/maispraTI_FullStack_LP04.git
 
-Link para GitHub Pages: https://ayuizu.github.io/maispraTI_FullStack_LP03/
+Link para GitHub Pages: https://ayuizu.github.io/maispraTI_FullStack_LP04/
 
 ## Fontes
 
@@ -42,3 +48,5 @@ Os ícones foram obtidos através do Font Awesome.
 
 - Foto de <a href="https://unsplash.com/pt-br/@themangomonster?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniel Téllez Girón</a> na <a href="https://unsplash.com/pt-br/fotografias/um-pedaco-de-sushi-sentado-em-cima-de-uma-tabua-de-corte-de-madeira-ZOINPNtpvGI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
+
+

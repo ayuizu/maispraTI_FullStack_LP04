@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kobe Cozinha Japonesa - Home</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/index.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
-<body>
+<body class="container-fluid justify-content-center">
     <header>
-        <nav class="nav navbar-expand container-fluid col-md-12">
-            <div class="col-md-4">
+        <!-- <nav class="nav navbar-expand-xl navbar-light"> -->
+        <nav class="nav navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-brand col-md-4">
                 <img class="logo" src="./assets/images/kobe_logo.png" alt="Kobe Cozinha Japonesa">
             </div>
-            <div class="mainMenu container col-md-8">
-                <ul>
+
+            <button class="navbar-toggler ms-auto me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./assets/images/toggler.png" alt="">
+            </button>
+
+            <div class="collapse navbar-collapse mainMenu" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="this-page" class="nav-item"><a href="#" class="nav-link">Início</a></li>
                     <li class="nav-item"><a href="./pages/about.html" class="nav-link">Sobre o Restaurante</a></li>
                     <li class="nav-item"><a href="./pages/menu.html" class="nav-link">Cardápio</a></li>
@@ -25,85 +33,122 @@
                     <li class="nav-item"><a href="./pages/contact.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
-    <main>
-        <section id="banner">
-            <!-- <img class="hero-img" src="./assets/images/banner2.JPEG" alt="Hero Image mostrando letreiro do restaurante"> -->
-        </section>
+    <main class="d-flex flex-column justify-content-center col-md-10 offset-md-1">
+ 
+        <div id="carousel" class="carousel slide d-flex justify-content-center col-md-10 mb-3" data-bs-ride="carousel">
+            <div class="col-md-2">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            </div>
+            <div class="carousel-inner col-md-8">
+                <div class="carousel-item active">
+                    <div class="grid-btn-carousel">
+                        <img class="img-carousel" src="./assets/images/japanese-food-4984953_1280.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="grid-btn-carousel">
+                        <img class="img-carousel" src="./assets/images/sushi-2853382_1280.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="grid-btn-carousel">
+                        <img class="img-carousel" src="./assets/images/sushi-4956246_1280.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="grid-btn-carousel">
+                        <img class="img-carousel" src="./assets/images/sushi-5062712_1280.jpg" alt="">
+                    </div>
+                </div>
 
-        <section id="content">
-            <table>
-                <tr class="cnt-description">
-                    <td colspan="2">
-                        <br>
-                        <h2>BEM VINDO AO KOBE</h2>
-                        <br>
-                        <p>Te convidamos a saborear a autêntica culinária japonesa em Porto Alegre.
-                            <br>
-                            Com um menu clássico e variado, resgatamos as principais características da tradicional gastronomia do Japão.</p><br>
-                    </td>
-                </tr>
-                <tr class="cnt-img-left">
-                    <td><img src="./assets/images/content1.png" alt="Fotografia do letreiro do Kobe Cozinha Japonesa."></td>
-                    <td>
-                        <div class="cnt-box-right">                 
-                            <h3>O RESTAURANTE</h3><br>
-                            <p>Com um menu clássico e muito variado, pretendemos resgatar as principais características da tradicional gastronomia do Japão</p>
-                            <br>
-                            <a class="content-link" href="#">Veja mais</a>
-                        </div>
-                    </td>
-                </tr>
+            </div>
+            <div class="col-md-2">
+                <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>   
+        <section id="content" class="d-flex flex-column">
+            <div class="d-flex row text-center mb-3">
+                <h2>BEM VINDO AO KOBE</h2>
 
-                <tr class="cnt-img-right" >
-                    <td>   
-                        <div class="cnt-box-left">                  
-                            <h3>MENU</h3><br>
-                            <p>Com um menu clássico e muito variado, resgatamos as principais características da tradicional gastronomia do Japão</p>
-                            <br>
-                            <a class="content-link" href="#">Veja mais</a>
-                        </div>
-                    </td>
-                    <td><img src="./assets/images/content2.png" alt="Fotografia de um prato do restaurante"></td>
-                </tr>
-
-                <tr class="cnt-img-left" >
-                    <td><img src="./assets/images/content3.png" alt="Fotografia antiga. Arquivo da família."></td>
-                    <td>    
-                        <div class="cnt-box-right">                 
-                            <h3>ORIGENS</h3><br>
-                            <p>A conexão entre Kobe e o Brasil é mais estreita do que o imaginado.</p>
-                            <br>
-                            <a class="content-link" href="/pages/about.html#origins">Veja mais</a>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="cnt-img-right" >
-                    <td>   
-                        <div class="cnt-box-left">                  
-                            <h3>RESERVA</h3><br>
-                            <p>Faça sua reserva para vivenciar uma experiência com a autêntica gastronimia japonesa.</p>
-                            <br>
-                            <a class="content-link" href="#">Veja mais</a>
-                        </div>
-                    </td>
-                    <td><img src="./assets/images/content4.png" alt="Fotografia de um letreiro do Kobe Cozinha Japonesa."></td>
-                </tr>
-                
-            </table>  
-
-                
-            </table>  
+                <p>Te convidamos a saborear a autêntica culinária japonesa em Porto Alegre.<br>
+                    Com um menu clássico e variado, resgatamos as principais características da tradicional gastronomia do Japão.</p>
+            </div>
+            <div class="row mb-3">
+                <div class="cnt-img-left col-md-6">
+                    <img src="./assets/images/content1.png" alt="Fotografia do letreiro do Kobe Cozinha Japonesa.">
+                </div>
+                <div class="cnt-box-right col-md-6">                 
+                    <h3>O RESTAURANTE</h3><br>
+                    <p>Com um menu clássico e muito variado, pretendemos resgatar as principais características da tradicional gastronomia do Japão</p>
+                    <br>
+                    <a class="content-link" href="#">Veja mais</a>
+                </div>
+            </div>
+            <div  class="row mb-3">                   
+                <div class="cnt-box-left col-md-6">                  
+                    <h3>MENU</h3><br>
+                    <p>Com um menu clássico e muito variado, resgatamos as principais características da tradicional gastronomia do Japão</p>
+                    <br>
+                    <a class="content-link" href="#">Veja mais</a>
+                </div>
+                <div class="cnt-img-right col-md-6" >    
+                    <img src="./assets/images/content2.png" alt="Fotografia de um prato do restaurante">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="cnt-img-left col-md-6" >
+                    <img src="./assets/images/content3.png" alt="Fotografia antiga. Arquivo da família.">
+                </div>
+                <div class="cnt-box-right col-md-6">                 
+                    <h3>ORIGENS</h3><br>
+                    <p>A conexão entre Kobe e o Brasil é mais estreita do que o imaginado.</p>
+                    <br>
+                    <a class="content-link" href="/pages/about.html#origins">Veja mais</a>
+                </div>              
+            </div>
+            <div class="row mb-3">                    
+                <div class="cnt-box-left col-md-6">                  
+                    <h3>RESERVA</h3><br>
+                    <p>Faça sua reserva para vivenciar uma experiência com a autêntica gastronimia japonesa.</p>
+                    <br>
+                    <a class="content-link" href="#">Veja mais</a>
+                </div>
+                    
+                <div class="cnt-img-right col-md-6" >    
+                    <img src="./assets/images/content4.png" alt="Fotografia de um letreiro do Kobe Cozinha Japonesa.">
+                </div>
+            </div>
 
         </section>
     </main>
-    <footer class="footer-home">
-        <p>Kobe Cozinha Japonesa &reg; CNPJ: 00.000.000/0000-00</p>
-    </footer
 
+    <div class="footer-home footer navbar-fixed-bottom">
+        <footer>
+            <div><p>Kobe Cozinha Japonesa &reg; CNPJ: 00.000.000/0000-00</p>
+        </footer>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        const myCarouselElement = document.querySelector('#myCarousel')
+
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 1000,
+        touch: false
+        })
+    </script>
 </body>
 </html>
